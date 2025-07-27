@@ -25,35 +25,35 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
       })}
     >
       {isAssistant && (
-        <Avatar className="h-9 w-9 border border-primary/50">
+        <Avatar className="h-10 w-10 border-2 border-primary/50">
           <AvatarFallback className="bg-primary/20 text-primary">
-            <Bot className="h-5 w-5" />
+            <Bot className="h-6 w-6" />
           </AvatarFallback>
         </Avatar>
       )}
       <div
         className={cn(
-          "max-w-md rounded-lg px-4 py-3 text-sm shadow",
+          "max-w-xl rounded-2xl px-5 py-3 text-base shadow-lg transition-all",
           {
-            "bg-card order-1": !isAssistant,
-            "bg-primary/10": isAssistant,
+            "bg-secondary text-secondary-foreground order-1 rounded-br-none": !isAssistant,
+            "bg-primary/10 text-foreground rounded-bl-none": isAssistant,
           }
         )}
       >
         {isLoading ? (
            <div className="flex items-center gap-2">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-muted-foreground" style={{animationDelay: '0s'}}></span>
-            <span className="h-2 w-2 animate-pulse rounded-full bg-muted-foreground" style={{animationDelay: '0.2s'}}></span>
-            <span className="h-2 w-2 animate-pulse rounded-full bg-muted-foreground" style={{animationDelay: '0.4s'}}></span>
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-muted-foreground/50" style={{animationDelay: '0s'}}></span>
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-muted-foreground/50" style={{animationDelay: '0.2s'}}></span>
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-muted-foreground/50" style={{animationDelay: '0.4s'}}></span>
           </div>
         ) : (
-          <p className="whitespace-pre-wrap">{message.content}</p>
+          <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
         )}
       </div>
       {!isAssistant && (
-        <Avatar className="h-9 w-9 border border-accent/50">
-          <AvatarFallback className="bg-accent/20 text-accent">
-            <User className="h-5 w-5" />
+        <Avatar className="h-10 w-10 border-2 border-accent/50">
+          <AvatarFallback className="bg-accent/20 text-accent-foreground">
+            <User className="h-6 w-6" />
           </AvatarFallback>
         </Avatar>
       )}

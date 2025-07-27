@@ -1,7 +1,6 @@
 "use client";
 
 import { chatbotEngine } from "@/ai/flows/chatbot-engine";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -83,19 +82,21 @@ export function ChatInterface({ cvData }: { cvData: string }) {
   };
 
   return (
-    <Card className="w-full max-w-3xl mx-auto shadow-2xl">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-2xl font-bold">
-          <Bot className="text-primary" />
+    <Card className="w-full max-w-3xl mx-auto shadow-2xl bg-card border-border rounded-2xl">
+      <CardHeader className="border-b border-border">
+        <CardTitle className="flex items-center gap-3 text-2xl font-bold text-foreground">
+          <div className="p-2 rounded-full bg-primary/10">
+            <Bot className="text-primary" />
+          </div>
           Ishay's CV Assistant
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-muted-foreground">
           Ask me anything about Ishay Rosengarten's skills and experience.
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[50vh] pr-4" ref={scrollAreaRef}>
-          <div className="flex flex-col gap-4">
+      <CardContent className="pt-6">
+        <ScrollArea className="h-[55vh] pr-4" ref={scrollAreaRef}>
+          <div className="flex flex-col gap-6">
             {messages.map((message) => (
               <ChatMessage key={message.id} message={message} />
             ))}
@@ -108,16 +109,16 @@ export function ChatInterface({ cvData }: { cvData: string }) {
           </div>
         </ScrollArea>
       </CardContent>
-      <CardFooter>
-        <form onSubmit={handleSubmit} className="flex w-full items-center gap-2">
+      <CardFooter className="pt-6 border-t border-border">
+        <form onSubmit={handleSubmit} className="flex w-full items-center gap-3">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="e.g., What is his experience with Shopify?"
             disabled={isLoading}
-            className="flex-grow"
+            className="flex-grow rounded-full text-base"
           />
-          <Button type="submit" size="icon" disabled={isLoading} className="bg-accent hover:bg-accent/90">
+          <Button type="submit" size="icon" disabled={isLoading} className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">
             {isLoading ? (
               <LoaderCircle className="animate-spin" />
             ) : (
