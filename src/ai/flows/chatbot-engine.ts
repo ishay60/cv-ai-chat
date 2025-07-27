@@ -46,18 +46,6 @@ async (input) => {
 }
 );
 
-const chatbotEnginePrompt = ai.definePrompt({
-  name: 'chatbotEnginePrompt',
-  tools: [answerQuestion],
-  input: {
-    schema: ChatbotEngineInputSchema,
-  },
-  output: {
-    schema: ChatbotEngineOutputSchema,
-  },
-  prompt: `You are a chatbot designed to answer questions about a person's CV. Use the available tools to answer the user's question based on the provided CV data.\n\nUser Question: {{{userQuestion}}}`,
-});
-
 const chatbotEngineFlow = ai.defineFlow(
   {
     name: 'chatbotEngineFlow',
@@ -65,7 +53,7 @@ const chatbotEngineFlow = ai.defineFlow(
     outputSchema: ChatbotEngineOutputSchema,
   },
   async input => {
-    const { output } = await chatbotEnginePrompt(input);
-    return { answer: output?.answer ?? 'I am sorry, I cannot answer this question.' };
+    const answer = await answerQuestion(input);
+    return { answer };
   }
 );
