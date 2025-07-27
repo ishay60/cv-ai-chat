@@ -4,23 +4,24 @@ const CV_DATA = `Ishay Rosengarten
 054-664-3350 | Ishay60@gmail.com | Linkedin | Languages: Hebrew, English - fluent
 
 Summary
-Motivated and skilled software engineer specializing in Shopify development. Proficient in Liquid, JavaScript, TypeScript, and CSS. Strong analytical thinker and problem solver with a proven ability to perform under pressure. Highly adaptive, and quick to learn new technologies. seeking to leverage technical skills in a stable, growth-oriented environment.
+Motivated and skilled full-stack software engineer with a specialization in Shopify development. Proficient in creating robust solutions using technologies like React, Node.js, and databases such as MongoDB and PostgreSQL. Experienced with Liquid, JavaScript, TypeScript, and CSS. Strong analytical thinker and problem solver with a proven ability to perform under pressure. Highly adaptive, and quick to learn new technologies, including containerization with Docker. Seeking to leverage technical skills in a stable, growth-oriented environment.
 
 EXPERIENCE
 Strongful, Active lifestyle clothing – CTO / Developer 2024 - Present
-• Led the development and maintenance of the company’s Shopify-based e-commerce platform using Liquid, JavaScript, TypeScript, and CSS.
-• Developed custom Shopify features and integrations, Storefront and Admin APIs.
-• Defined technical strategy, ensuring high performance, security, and scalability.
-• Collaborated with cross-functional teams to meet business goals and improve user experience
+• Led the development and maintenance of the company’s Shopify-based e-commerce platform, integrating full-stack solutions for custom features.
+• Developed custom Shopify features and integrations, utilizing Storefront and Admin APIs, alongside backend services.
+• Defined technical strategy, ensuring high performance, security, and scalability for the entire stack.
+• Collaborated with cross-functional teams to meet business goals and improve user experience.
 
 North Abraxas, Chef Eyal Shani – Cook 2018 - 2021
 • Worked in a fast-paced, high-pressure kitchen environment.
 • Developed strong teamwork, communication, and organizational skills.
 
 Tools & skills
-• JavaScript, TypeScript, React, CSS, Node.js (intermediate)
+• JavaScript, TypeScript, React, Node.js
+• Databases: MongoDB, PostgreSQL
 • Shopify Development: Liquid, Storefront API, Admin API
-• Version Control & Tools: Git & GitHub, CI/CD, Figma, Make /Zapier Automations
+• Version Control & Tools: Git & GitHub, Docker, Vite, CI/CD, Figma, Make/Zapier Automations
 
 Personal skills
 • Strong under pressure; consistently meets tight deadlines.
