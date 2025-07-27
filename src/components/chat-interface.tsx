@@ -77,12 +77,6 @@ export function ChatInterface({ cvData }: { cvData: string }) {
         title: "Uh oh! Something went wrong.",
         description: "There was a problem communicating with the assistant. Please try again.",
       });
-       const errorMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: "I'm sorry, but I encountered an error and can't respond right now. Please try again later.",
-      };
-      setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
     }
