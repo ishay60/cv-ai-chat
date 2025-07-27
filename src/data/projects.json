@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": "1",
+    "title": "E-commerce Platform",
+    "description": "A full-stack e-commerce solution with a custom backend, product management, and a seamless user shopping experience. Built with a focus on performance and scalability.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Docker", "Shopify API"],
+    "imageUrl": "https://placehold.co/600x400.png",
+    "imageHint": "e-commerce online shopping",
+    "link": "https://github.com"
+  },
+  {
+    "id": "2",
+    "title": "Data Dashboard",
+    "description": "An interactive dashboard for visualizing complex data sets. Features real-time updates and a variety of chart types to provide insightful analytics.",
+    "technologies": ["Vite", "React", "TypeScript", "MongoDB"],
+    "imageUrl": "https://placehold.co/600x400.png",
+    "imageHint": "data dashboard analytics",
+    "link": "https://github.com"
+  },
+  {
+    "id": "3",
+    "title": "Automation Service",
+    "description": "A service that automates repetitive tasks using Make/Zapier, integrating with various third-party APIs to streamline workflows and improve efficiency.",
+    "technologies": ["Make", "Zapier", "Node.js", "APIs"],
+    "imageUrl": "https://placehold.co/600x400.png",
+    "imageHint": "automation workflow gears",
+    "link": "https://github.com"
+  }
+]

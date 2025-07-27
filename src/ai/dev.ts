@@ -3,3 +3,4 @@ config();
 
 import '@/ai/flows/chatbot-engine.ts';
 import '@/ai/flows/cv-parsing.ts';
+import '@/ai/flows/project-showcase.ts';
