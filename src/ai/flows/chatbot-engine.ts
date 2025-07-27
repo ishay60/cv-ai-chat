@@ -40,7 +40,13 @@ async (input) => {
   //console.log('CV Data:', cvData);
   //console.log('User Question:', userQuestion);
   const { text } = await ai.generate({
-    prompt: `Use the following CV data to answer the user question.\n\nCV Data: ${cvData}\n\nUser Question: ${userQuestion}`,
+    prompt: `You are a helpful assistant for Ishay Rosengarten's CV. Use the following CV data to answer the user question.
+
+If the user asks about salary expectations or other personal details not present in the CV, politely state that this information is not available in the document and recommend contacting Ishay directly for such matters. Provide his email from the CV.
+
+CV Data: ${cvData}
+
+User Question: ${userQuestion}`,
   });
   return text;
 }
