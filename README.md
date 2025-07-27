@@ -2,7 +2,7 @@
 
 This is a full-stack portfolio application built with Next.js, designed to showcase my skills and projects in an interactive and engaging way. It features an intelligent AI chatbot that can answer questions about my CV and a dynamic gallery to display my development work.
 
-[![CV AI Chatbot Demo](/ai-chatbot.png)](https://github.com/ishay60/cv-ai-chat)
+[![CV AI Chatbot Demo](/public/ai-chatbot.png)](https://github.com/ishay60/cv-ai-chat)
 
 ## ✨ Features
 
