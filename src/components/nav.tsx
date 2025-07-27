@@ -18,7 +18,7 @@ export function Nav() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-primary flex items-center gap-2">
-            <span>Ishay Rosengarten</span>
+            Ishay Rosengarten
           </Link>
           <div className="flex items-center gap-4">
             {links.map(({ href, label, icon: Icon }) => {
