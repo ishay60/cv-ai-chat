@@ -32,7 +32,7 @@
     "title": "CV AI Chatbot",
     "description": "An intelligent, conversational AI chatbot built to answer questions about my professional experience, skills, and projects from my CV.",
     "technologies": ["Next.js", "React", "Genkit", "Tailwind CSS"],
-    "imageUrl": "https://placehold.co/600x400.png",
+    "imageUrl": "https://placehold.co/600x400.png?text=CV+AI+Chatbot+Screenshot",
     "imageHint": "chatbot conversation ai",
     "link": "https://github.com/ishay60/cv-ai-chat"
   }

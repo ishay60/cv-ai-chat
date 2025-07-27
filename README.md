@@ -2,7 +2,7 @@
 
 This is a full-stack portfolio application built with Next.js, designed to showcase my skills and projects in an interactive and engaging way. It features an intelligent AI chatbot that can answer questions about my CV and a dynamic gallery to display my development work.
 
-[![CV AI Chatbot Demo](https://placehold.co/800x400.png?text=Project+Screenshot)](https://your-live-demo-url.com)
+[![CV AI Chatbot Demo](https://placehold.co/800x400.png?text=CV+AI+Chatbot+Screenshot)](https://github.com/ishay60/cv-ai-chat)
 
 ## ✨ Features
 
